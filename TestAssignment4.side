@@ -1,0 +1,1355 @@
+TC001
+{
+  "id": "d1e9f00b-a97f-47e5-8b5b-3ec26f611bbe",
+  "version": "2.0",
+  "name": "TestAssignment4",
+  "url": "https://demo.guru99.com/test/newtours/",
+  "tests": [{
+    "id": "61c8899d-1100-4c87-9fe0-f975eee2c7c7",
+    "name": "TC001_Login",
+    "commands": [{
+      "id": "92738e31-40c1-48f0-92f3-17b81549a51c",
+      "comment": "",
+      "command": "open",
+      "target": "/test/newtours/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "803dab0e-9fa1-4f92-a265-4240153617d3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "802x813",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12f104ac-0639-4dd8-94ac-592db30eec0f",
+      "comment": "Clicking on username text box",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f0c3a21-227d-4b28-9f12-d01ed8689947",
+      "comment": "typing in \"aa\" as the username",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "aa"
+    }, {
+      "id": "69363b76-75b1-4c2b-a1f5-6bbb1ae517ec",
+      "comment": "clicking on the password text box",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0203c250-d187-4a01-9330-22abc06342a2",
+      "comment": "inputting \"12\" in the password text box",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "12"
+    }, {
+      "id": "2d15bea0-1416-4ac7-9cab-29daacdf5462",
+      "comment": "clicking the submit button",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bd170a6-9770-4dac-a5fe-a1b44c7db6f0",
+      "comment": "ensuring user is not able to log in",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td > table > tbody > tr:nth-child(3) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(4) > td > table > tbody > tr:nth-child(3) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[4]/td/table/tbody/tr[3]/td[2]", "xpath:position"]
+      ],
+      "value": "Enter your userName and password correct"
+    }]
+  }, {
+
+
+
+TC002
+    "id": "2e48e736-4d04-476d-9689-f119b1b11787",
+    "name": "TC002_Login",
+    "commands": [{
+      "id": "36783988-46d8-4259-9c38-bca668bac049",
+      "comment": "",
+      "command": "open",
+      "target": "/test/newtours/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b24e670-45c6-45c3-8aa5-a79d76628a1b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "802x813",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6be4f012-8362-4e7f-9186-8672e1ce5d04",
+      "comment": "clicking on the username text box",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94739c6c-cb77-4397-8c1c-779b65104a9a",
+      "comment": "inputting \"aa\" as the user name",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "aa"
+    }, {
+      "id": "a189aa81-81e4-41a2-a0b6-07a75c9cfaed",
+      "comment": "clicking on the password text box",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c14d614-ffb7-4ab2-a12e-3d57733aece3",
+      "comment": "inputting \"password\" in the password text box",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "6ba09d64-0cbe-4bf6-a1bc-05e6b9dd7d99",
+      "comment": "clicking submit",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d77f2ef-0ca1-4aed-8e80-ab83712cd739",
+      "comment": "ensuring log in is successful ",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Login Successfully')]", "xpath:innerText"]
+      ],
+      "value": "Login Successfully"
+    }]
+  }, {
+
+
+
+
+
+TC003
+    "id": "b9d72be1-4095-4903-a41b-9bdab6f5af37",
+    "name": "TC003_Flights",
+    "commands": [{
+      "id": "e368a0b4-b58b-4d38-b506-b16ab92f4cf4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac3d3a69-a557-4150-94e0-008772fd4686",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x774",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33a23143-b9eb-41a0-a5cc-3ee9f9341a41",
+      "comment": "Clicking Flight tab",
+      "command": "click",
+      "target": "linkText=Flights",
+      "targets": [
+        ["linkText=Flights", "linkText"],
+        ["css=.mouseOver a", "css:finder"],
+        ["xpath=//a[contains(text(),'Flights')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'reservation.php')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Flights')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "871ede87-4282-474a-8554-d52dc6e10ab6",
+      "comment": "Selecting round trip flight",
+      "command": "click",
+      "target": "name=tripType",
+      "targets": [
+        ["name=tripType", "name"],
+        ["css=b input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='tripType']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abad27c9-f993-46fd-8a2f-9e727dca0e2e",
+      "comment": "Clicking passenger number drop down",
+      "command": "click",
+      "target": "name=passCount",
+      "targets": [
+        ["name=passCount", "name"],
+        ["css=b > select", "css:finder"],
+        ["xpath=//select[@name='passCount']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "701a5e21-ba26-407e-b443-bd7c39e793f5",
+      "comment": "selecting # of passangers",
+      "command": "select",
+      "target": "name=passCount",
+      "targets": [],
+      "value": "label=2"
+    }, {
+      "id": "d5d21e2d-6632-40d5-a034-0e80c6572283",
+      "comment": "selecting departure city",
+      "command": "click",
+      "target": "name=fromPort",
+      "targets": [
+        ["name=fromPort", "name"],
+        ["css=tr:nth-child(4) > td > select", "css:finder"],
+        ["xpath=//select[@name='fromPort']", "xpath:attributes"],
+        ["xpath=//td[2]/select", "xpath:position"],
+        ["xpath=//select[contains(.,'Acapulco\nFrankfurt\nLondon\nNew York\nParis\nPortland\nSan Francisco\nSeattle\nSydney\nZurich')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a3cb45a-ed6b-43c7-bc75-1bbb7af5f599",
+      "comment": "choosing new york",
+      "command": "select",
+      "target": "name=fromPort",
+      "targets": [],
+      "value": "label=New York"
+    }, {
+      "id": "1083d6a1-ee63-470b-abff-e04b1853c1fa",
+      "comment": "selecting departure date",
+      "command": "click",
+      "target": "name=fromMonth",
+      "targets": [
+        ["name=fromMonth", "name"],
+        ["css=tr:nth-child(5) > td > select:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='fromMonth']", "xpath:attributes"],
+        ["xpath=//tr[5]/td[2]/select", "xpath:position"],
+        ["xpath=//select[contains(.,'January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1af8ca67-c933-4269-a7fb-94d28b6a8f69",
+      "comment": "selecting october",
+      "command": "select",
+      "target": "name=fromMonth",
+      "targets": [],
+      "value": "label=October"
+    }, {
+      "id": "cca35fc8-d0e2-414b-a55d-11637c663cab",
+      "comment": "selecting day",
+      "command": "click",
+      "target": "name=fromDay",
+      "targets": [
+        ["name=fromDay", "name"],
+        ["css=tr:nth-child(5) > td > select:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='fromDay']", "xpath:attributes"],
+        ["xpath=//select[2]", "xpath:position"],
+        ["xpath=//select[contains(.,'1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67c773ed-2433-4b05-ac2a-e58a506afedd",
+      "comment": "selecting the 10th",
+      "command": "select",
+      "target": "name=fromDay",
+      "targets": [],
+      "value": "label=10"
+    }, {
+      "id": "5b06cafb-9f62-41c4-9ead-939a34107272",
+      "comment": "selecting arrival city",
+      "command": "click",
+      "target": "name=toPort",
+      "targets": [
+        ["name=toPort", "name"],
+        ["css=tr:nth-child(6) select", "css:finder"],
+        ["xpath=//select[@name='toPort']", "xpath:attributes"],
+        ["xpath=//tr[6]/td[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04641487-6782-41e9-9072-e8cfe5e54999",
+      "comment": "choosing paris",
+      "command": "select",
+      "target": "name=toPort",
+      "targets": [],
+      "value": "label=Paris"
+    }, {
+      "id": "9e2296bb-d645-4868-9f5e-e4f52aab9230",
+      "comment": "selecting return month",
+      "command": "click",
+      "target": "name=toMonth",
+      "targets": [
+        ["name=toMonth", "name"],
+        ["css=tr:nth-child(7) select:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='toMonth']", "xpath:attributes"],
+        ["xpath=//tr[7]/td[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2b92139-3223-4b10-ad48-330fb9b7c488",
+      "comment": "choosing october",
+      "command": "select",
+      "target": "name=toMonth",
+      "targets": [],
+      "value": "label=October"
+    }, {
+      "id": "5c5f5330-b05e-4d22-b17c-7b7d8316fdbd",
+      "comment": "selecting return day",
+      "command": "click",
+      "target": "name=toDay",
+      "targets": [
+        ["name=toDay", "name"],
+        ["css=tr:nth-child(7) select:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='toDay']", "xpath:attributes"],
+        ["xpath=//tr[7]/td[2]/select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "024a1114-bace-4daf-a82e-448bb498cadd",
+      "comment": "selecting the 24th",
+      "command": "select",
+      "target": "name=toDay",
+      "targets": [],
+      "value": "label=24"
+    }, {
+      "id": "e7fdf4de-6f5d-42fd-bc7e-02ae265a333a",
+      "comment": "clicking first class",
+      "command": "click",
+      "target": "css=input:nth-child(4)",
+      "targets": [
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=(//input[@name='servClass'])[3]", "xpath:attributes"],
+        ["xpath=//font/font/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a992ca10-1e48-4d25-a0f3-1d94220fab1b",
+      "comment": "choosing no airline preference",
+      "command": "click",
+      "target": "name=airline",
+      "targets": [
+        ["name=airline", "name"],
+        ["css=tr:nth-child(10) select", "css:finder"],
+        ["xpath=//select[@name='airline']", "xpath:attributes"],
+        ["xpath=//tr[10]/td[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a9b1363-2623-498c-83e3-fc48330da4cd",
+      "comment": "clicking continue to find flights",
+      "command": "click",
+      "target": "name=findFlights",
+      "targets": [
+        ["name=findFlights", "name"],
+        ["css=td > input", "css:finder"],
+        ["xpath=//input[@name='findFlights']", "xpath:attributes"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e506c383-557a-4606-a828-608cdb0760ba",
+      "comment": "Ensuring flights are searched for",
+      "command": "assertText",
+      "target": "css=font:nth-child(1) > b > font:nth-child(1)",
+      "targets": [
+        ["css=font:nth-child(1) > b > font:nth-child(1)", "css:finder"],
+        ["xpath=//b/font", "xpath:position"]
+      ],
+      "value": "After flight finder - No Seats Avaialble"
+    }, {
+      "id": "9845dae5-daea-4e8a-8d22-91c4e0a6fead",
+      "comment": "clicking back to home",
+      "command": "click",
+      "target": "css=td > a > img",
+      "targets": [
+        ["css=td > a > img", "css:finder"],
+        ["xpath=//td/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f585ed2b-258b-4e16-90e0-c9bea03a264c",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+
+
+
+
+
+TC004
+    "id": "ab0d7e3f-3898-4d2c-8eeb-f09c21ae9f5a",
+    "name": "TC004_Registration",
+    "commands": [{
+      "id": "047f334f-fa6a-4541-8862-97e6d247ee25",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.guru99.com/test/newtours/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "053f7406-4a7d-4b6a-9a01-67283057e187",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x774",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "747dba3a-54f8-4b42-a60d-fbae8e8ca103",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Telecom Project",
+      "targets": [
+        ["linkText=Telecom Project", "linkText"],
+        ["css=.dropdown:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Telecom Project')]", "xpath:link"],
+        ["xpath=//div[@id='navbar-brand-centered']/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://demo.guru99.com/telecom/index.html']", "xpath:href"],
+        ["xpath=//div/ul/li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Telecom Project')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a83ddc6-5513-45a9-a374-51d832b3dd9d",
+      "comment": "clicking on register tab",
+      "command": "click",
+      "target": "linkText=REGISTER",
+      "targets": [
+        ["linkText=REGISTER", "linkText"],
+        ["css=.mouseOver > a", "css:finder"],
+        ["xpath=//a[contains(text(),'REGISTER')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'register.php')]", "xpath:href"],
+        ["xpath=//tr[2]/td/table/tbody/tr/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'REGISTER')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "649e65af-315e-4b91-8456-68ab8136ce67",
+      "comment": "selecting first name text box",
+      "command": "click",
+      "target": "name=firstName",
+      "targets": [
+        ["name=firstName", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='firstName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bbe4b6c-47a1-483a-a161-fce83e733581",
+      "comment": "typing jenna",
+      "command": "type",
+      "target": "name=firstName",
+      "targets": [
+        ["name=firstName", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='firstName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "Jenna"
+    }, {
+      "id": "89c7df6d-6b53-403d-9afd-ff3d45443760",
+      "comment": "selecting last name text box",
+      "command": "click",
+      "target": "name=lastName",
+      "targets": [
+        ["name=lastName", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='lastName']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "822d41ac-49af-4fdf-b4e2-658bb8c67647",
+      "comment": "typing ptak",
+      "command": "type",
+      "target": "name=lastName",
+      "targets": [
+        ["name=lastName", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='lastName']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Ptak"
+    }, {
+      "id": "a73f704e-aafe-4f80-be31-4edaac1bddce",
+      "comment": "selecting phone number",
+      "command": "click",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=tr:nth-child(4) > td > input", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d544da50-f2cf-4c4d-938c-23c00b8943b8",
+      "comment": "inputting 123-456-7890 as number",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=tr:nth-child(4) > td > input", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": "123-456-7890"
+    }, {
+      "id": "629dcfdb-fd4d-48d4-b09b-d3dcb4a25566",
+      "comment": "selecting email",
+      "command": "click",
+      "target": "id=userName",
+      "targets": [
+        ["id=userName", "id"],
+        ["name=userName", "name"],
+        ["css=#userName", "css:finder"],
+        ["xpath=//input[@id='userName']", "xpath:attributes"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5200a7f-5aad-4cbc-aa3b-26de95c5f149",
+      "comment": "inputting email as Jennaptak@usf.edu",
+      "command": "type",
+      "target": "id=userName",
+      "targets": [
+        ["id=userName", "id"],
+        ["name=userName", "name"],
+        ["css=#userName", "css:finder"],
+        ["xpath=//input[@id='userName']", "xpath:attributes"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Jennaptak@usf.edu"
+    }, {
+      "id": "8f5205ca-93ed-41c6-b9cb-5c2e31fc5cb5",
+      "comment": "selecting address",
+      "command": "click",
+      "target": "name=address1",
+      "targets": [
+        ["name=address1", "name"],
+        ["css=tr:nth-child(7) input", "css:finder"],
+        ["xpath=//input[@name='address1']", "xpath:attributes"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bbb015d-7978-46ec-abca-ef1ed26c5ee8",
+      "comment": "inputting 4200 E Fowler Ave as address",
+      "command": "type",
+      "target": "name=address1",
+      "targets": [
+        ["name=address1", "name"],
+        ["css=tr:nth-child(7) input", "css:finder"],
+        ["xpath=//input[@name='address1']", "xpath:attributes"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": "4200 E Fowler Ave"
+    }, {
+      "id": "debc56a4-bc9a-4092-aa6d-13c9291a9f3f",
+      "comment": "selecting city",
+      "command": "click",
+      "target": "name=city",
+      "targets": [
+        ["name=city", "name"],
+        ["css=tr:nth-child(8) input", "css:finder"],
+        ["xpath=//input[@name='city']", "xpath:attributes"],
+        ["xpath=//tr[8]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6602c3d6-ac02-4b95-8705-b5e7d48363e4",
+      "comment": "typing Tampa as city",
+      "command": "type",
+      "target": "name=city",
+      "targets": [
+        ["name=city", "name"],
+        ["css=tr:nth-child(8) input", "css:finder"],
+        ["xpath=//input[@name='city']", "xpath:attributes"],
+        ["xpath=//tr[8]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Tampa"
+    }, {
+      "id": "667476f4-805b-464a-b6ac-96b2be198781",
+      "comment": "selecting state",
+      "command": "click",
+      "target": "name=state",
+      "targets": [
+        ["name=state", "name"],
+        ["css=tr:nth-child(9) input", "css:finder"],
+        ["xpath=//input[@name='state']", "xpath:attributes"],
+        ["xpath=//tr[9]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2dc54516-1816-4beb-a71a-32a96833efd2",
+      "comment": "selecting Florida as state",
+      "command": "type",
+      "target": "name=state",
+      "targets": [
+        ["name=state", "name"],
+        ["css=tr:nth-child(9) input", "css:finder"],
+        ["xpath=//input[@name='state']", "xpath:attributes"],
+        ["xpath=//tr[9]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Florida"
+    }, {
+      "id": "1809c90c-0fa9-4fc0-af35-3ab3ba118039",
+      "comment": "selecting postal code",
+      "command": "click",
+      "target": "name=postalCode",
+      "targets": [
+        ["name=postalCode", "name"],
+        ["css=tr:nth-child(10) input", "css:finder"],
+        ["xpath=//input[@name='postalCode']", "xpath:attributes"],
+        ["xpath=//tr[10]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63b51a0d-c59b-47ee-894f-21b22681a282",
+      "comment": "typing 33613 as postal code",
+      "command": "type",
+      "target": "name=postalCode",
+      "targets": [
+        ["name=postalCode", "name"],
+        ["css=tr:nth-child(10) input", "css:finder"],
+        ["xpath=//input[@name='postalCode']", "xpath:attributes"],
+        ["xpath=//tr[10]/td[2]/input", "xpath:position"]
+      ],
+      "value": "33613"
+    }, {
+      "id": "71952696-e77d-4e5a-adbb-e1adf80bdc68",
+      "comment": "selecting country",
+      "command": "click",
+      "target": "name=country",
+      "targets": [
+        ["name=country", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='country']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d91cd312-675e-4a96-bf8e-bc7fb6b9b3f0",
+      "comment": "selecting united states from drop down",
+      "command": "select",
+      "target": "name=country",
+      "targets": [],
+      "value": "label=UNITED STATES"
+    }, {
+      "id": "0d822fe4-5eee-4cd9-a37a-1c2a607e8c7f",
+      "comment": "selecting username text box",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//tr[13]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1383b5fd-a2c0-4a7e-9e17-78b73b0c4ee1",
+      "comment": "inputting jennaptak as username",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//tr[13]/td[2]/input", "xpath:position"]
+      ],
+      "value": "jennaptak"
+    }, {
+      "id": "974a8912-1d77-4d41-9a67-901d3dcbb532",
+      "comment": "selecting password",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(14) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[14]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6db0bb7-ed0c-45d6-806c-15ea0e9d3f8a",
+      "comment": "inputting password as password",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(14) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[14]/td[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "a80dae0b-2b06-46af-ba26-3f76f025ede7",
+      "comment": "selecting confirm password",
+      "command": "click",
+      "target": "name=confirmPassword",
+      "targets": [
+        ["name=confirmPassword", "name"],
+        ["css=tr:nth-child(15) input", "css:finder"],
+        ["xpath=//input[@name='confirmPassword']", "xpath:attributes"],
+        ["xpath=//tr[15]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52f1ab49-47f4-46f9-9fd4-c71d1d48c851",
+      "comment": "retyping in password as value",
+      "command": "type",
+      "target": "name=confirmPassword",
+      "targets": [
+        ["name=confirmPassword", "name"],
+        ["css=tr:nth-child(15) input", "css:finder"],
+        ["xpath=//input[@name='confirmPassword']", "xpath:attributes"],
+        ["xpath=//tr[15]/td[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "3cead871-d2ea-40d3-9b52-4a99826f980e",
+      "comment": "clicking sumit",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//tr[17]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab51e13e-ecfe-4e7a-86c0-553d2625f02b",
+      "comment": "ensuring user is registered",
+      "command": "assertText",
+      "target": "css=p:nth-child(2) > font",
+      "targets": [
+        ["css=p:nth-child(2) > font", "css:finder"],
+        ["xpath=//tr[3]/td/p[2]/font", "xpath:position"]
+      ],
+      "value": "Thank you for registering. You may now sign-in using the user name and password you've just entered."
+    }, {
+      "id": "2d7cf3a0-ee6d-4af7-9ac8-5b186778ef21",
+      "comment": "clicking sign in",
+      "command": "click",
+      "target": "linkText=sign-in",
+      "targets": [
+        ["linkText=sign-in", "linkText"],
+        ["css=p a", "css:finder"],
+        ["xpath=//a[contains(text(),'sign-in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'login.php')]", "xpath:href"],
+        ["xpath=//p[2]/font/a", "xpath:position"],
+        ["xpath=//a[contains(.,'sign-in ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1198853a-d5b0-4e8f-a578-d839ea30a2b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=form tr:nth-child(1) > td:nth-child(2)",
+      "targets": [
+        ["css=form tr:nth-child(1) > td:nth-child(2)", "css:finder"],
+        ["xpath=//form/table/tbody/tr/td[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c34d3412-e460-419d-9a58-37e463e88aec",
+      "comment": "clicking username text box",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(1) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa08017b-f467-46ac-9dd6-0b779178ead8",
+      "comment": "typing user name from registration",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(1) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "jennaptak"
+    }, {
+      "id": "14f73b2b-248a-44d3-ad29-35bc67f2e81a",
+      "comment": "selecting password text box",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd7e55a2-4a53-4b14-992b-fea2104bf2d1",
+      "comment": "typing password from registration",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "0cf9bb81-2855-4d22-be2d-1400fa6e109c",
+      "comment": "clicking submit ",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//tr[4]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1f46da7-3c95-45a7-b51f-beb64eb88403",
+      "comment": "Ensure log in is successful",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Login Successfully')]", "xpath:innerText"]
+      ],
+      "value": "Login Successfully"
+    }]
+  }, {
+
+
+
+
+
+
+TC005
+    "id": "aed75e38-1054-4340-b8eb-d4a7a72cf015",
+    "name": "TC005_Registration",
+    "commands": [{
+      "id": "29c50049-0e10-4703-9db1-edaaca359672",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.guru99.com/test/newtours/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ad3b926-7d01-43e2-a9f4-fdfc3569a38b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x774",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c312ab04-f775-4681-be86-b9a928743282",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Telecom Project",
+      "targets": [
+        ["linkText=Telecom Project", "linkText"],
+        ["css=.dropdown:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Telecom Project')]", "xpath:link"],
+        ["xpath=//div[@id='navbar-brand-centered']/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://demo.guru99.com/telecom/index.html']", "xpath:href"],
+        ["xpath=//div/ul/li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Telecom Project')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af8036a5-9f86-4145-a897-ad2c4de31d06",
+      "comment": "clicking on register tab",
+      "command": "click",
+      "target": "linkText=REGISTER",
+      "targets": [
+        ["linkText=REGISTER", "linkText"],
+        ["css=.mouseOver > a", "css:finder"],
+        ["xpath=//a[contains(text(),'REGISTER')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'register.php')]", "xpath:href"],
+        ["xpath=//tr[2]/td/table/tbody/tr/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'REGISTER')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05df2414-bae9-4f40-877d-edf40d86548c",
+      "comment": "selecting first name text box",
+      "command": "click",
+      "target": "name=firstName",
+      "targets": [
+        ["name=firstName", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='firstName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d87ebc1a-f7b9-4185-84ca-0454b320df5a",
+      "comment": "Leaving first name field as null",
+      "command": "type",
+      "target": "name=firstName",
+      "targets": [
+        ["name=firstName", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='firstName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "695ab639-bfab-4456-8f05-2537c0f5ef1c",
+      "comment": "selecting last name text box",
+      "command": "click",
+      "target": "name=lastName",
+      "targets": [
+        ["name=lastName", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='lastName']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "effec27d-18c9-4aba-9478-fc98c610923b",
+      "comment": "Leaving last name field as null",
+      "command": "type",
+      "target": "name=lastName",
+      "targets": [
+        ["name=lastName", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='lastName']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "460792ca-dea8-4780-af78-7cd983553a3d",
+      "comment": "selecting phone number",
+      "command": "click",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=tr:nth-child(4) > td > input", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a07a766-11f4-4d20-9703-203e70236e65",
+      "comment": "Leaving phone number field as null",
+      "command": "type",
+      "target": "name=phone",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=tr:nth-child(4) > td > input", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1814c792-6030-4391-8860-2d70f7241334",
+      "comment": "selecting email",
+      "command": "click",
+      "target": "id=userName",
+      "targets": [
+        ["id=userName", "id"],
+        ["name=userName", "name"],
+        ["css=#userName", "css:finder"],
+        ["xpath=//input[@id='userName']", "xpath:attributes"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58796297-9d9b-48cf-bc06-2c11c0cdf406",
+      "comment": "Leaving email field as null",
+      "command": "type",
+      "target": "id=userName",
+      "targets": [
+        ["id=userName", "id"],
+        ["name=userName", "name"],
+        ["css=#userName", "css:finder"],
+        ["xpath=//input[@id='userName']", "xpath:attributes"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b70b97e-54d1-4bb6-bddc-675c017f5478",
+      "comment": "selecting address",
+      "command": "click",
+      "target": "name=address1",
+      "targets": [
+        ["name=address1", "name"],
+        ["css=tr:nth-child(7) input", "css:finder"],
+        ["xpath=//input[@name='address1']", "xpath:attributes"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "094a7588-87d7-460f-97a1-3cba30be7493",
+      "comment": "Leaving address field as null",
+      "command": "type",
+      "target": "name=address1",
+      "targets": [
+        ["name=address1", "name"],
+        ["css=tr:nth-child(7) input", "css:finder"],
+        ["xpath=//input[@name='address1']", "xpath:attributes"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c3b1c63-0dfd-45f7-92b0-b270513d8968",
+      "comment": "selecting city",
+      "command": "click",
+      "target": "name=city",
+      "targets": [
+        ["name=city", "name"],
+        ["css=tr:nth-child(8) input", "css:finder"],
+        ["xpath=//input[@name='city']", "xpath:attributes"],
+        ["xpath=//tr[8]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02299fec-999d-474d-868e-ee6e4ab0047c",
+      "comment": "Leaving city field as null",
+      "command": "type",
+      "target": "name=city",
+      "targets": [
+        ["name=city", "name"],
+        ["css=tr:nth-child(8) input", "css:finder"],
+        ["xpath=//input[@name='city']", "xpath:attributes"],
+        ["xpath=//tr[8]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6493ba7-92d2-4525-9217-9598532bb8ac",
+      "comment": "selecting state",
+      "command": "click",
+      "target": "name=state",
+      "targets": [
+        ["name=state", "name"],
+        ["css=tr:nth-child(9) input", "css:finder"],
+        ["xpath=//input[@name='state']", "xpath:attributes"],
+        ["xpath=//tr[9]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25cd681f-b20f-4194-b25d-64ff61a63d96",
+      "comment": "Leaving state field as null",
+      "command": "type",
+      "target": "name=state",
+      "targets": [
+        ["name=state", "name"],
+        ["css=tr:nth-child(9) input", "css:finder"],
+        ["xpath=//input[@name='state']", "xpath:attributes"],
+        ["xpath=//tr[9]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ab30814-ead7-4b9a-8467-929a7d82e0d8",
+      "comment": "selecting postal code",
+      "command": "click",
+      "target": "name=postalCode",
+      "targets": [
+        ["name=postalCode", "name"],
+        ["css=tr:nth-child(10) input", "css:finder"],
+        ["xpath=//input[@name='postalCode']", "xpath:attributes"],
+        ["xpath=//tr[10]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5c1551c-a45f-4158-ab1d-2fc4cfe76a1c",
+      "comment": "Leaving postal cose field as null",
+      "command": "type",
+      "target": "name=postalCode",
+      "targets": [
+        ["name=postalCode", "name"],
+        ["css=tr:nth-child(10) input", "css:finder"],
+        ["xpath=//input[@name='postalCode']", "xpath:attributes"],
+        ["xpath=//tr[10]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51814f7f-5059-464f-8c19-0dc0adecdcc1",
+      "comment": "selecting country and leaving field as null",
+      "command": "click",
+      "target": "name=country",
+      "targets": [
+        ["name=country", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='country']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0dae4cc-c5f1-49d5-9580-57130c152e32",
+      "comment": "selecting username text box",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//tr[13]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95c23ea5-d44b-4c7b-b49a-ca8cf0a8a514",
+      "comment": "Leaving username field as null",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//tr[13]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d850dab0-6042-491f-a2d2-8a8402f5a041",
+      "comment": "selecting password",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(14) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[14]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "110e467d-b3ff-4c10-b6a7-b1410d4cb54e",
+      "comment": "Leaving password field as null",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(14) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[14]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dd4eddc-051b-4e4d-992e-7b510faa3ac8",
+      "comment": "selecting confirm password",
+      "command": "click",
+      "target": "name=confirmPassword",
+      "targets": [
+        ["name=confirmPassword", "name"],
+        ["css=tr:nth-child(15) input", "css:finder"],
+        ["xpath=//input[@name='confirmPassword']", "xpath:attributes"],
+        ["xpath=//tr[15]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "806bbb80-64d8-4079-b17b-f2b991f97f43",
+      "comment": "Leaving password field as null",
+      "command": "type",
+      "target": "name=confirmPassword",
+      "targets": [
+        ["name=confirmPassword", "name"],
+        ["css=tr:nth-child(15) input", "css:finder"],
+        ["xpath=//input[@name='confirmPassword']", "xpath:attributes"],
+        ["xpath=//tr[15]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2488f2a4-59ad-4263-99f6-3f7ae08fa5bb",
+      "comment": "clicking sumit",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//tr[17]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fc610ad-9129-4b6f-bb70-3e3b066a6477",
+      "comment": "seeing if registration is successful",
+      "command": "assertText",
+      "target": "css=p:nth-child(2) > font",
+      "targets": [
+        ["css=p:nth-child(2) > font", "css:finder"],
+        ["xpath=//tr[3]/td/p[2]/font", "xpath:position"]
+      ],
+      "value": "Thank you for registering. You may now sign-in using the user name and password you've just entered."
+    }, {
+      "id": "6d7d2c35-c5aa-448a-9a34-43b9fa7cb1b0",
+      "comment": "clicking sign in",
+      "command": "click",
+      "target": "linkText=sign-in",
+      "targets": [
+        ["linkText=sign-in", "linkText"],
+        ["css=p a", "css:finder"],
+        ["xpath=//a[contains(text(),'sign-in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'login.php')]", "xpath:href"],
+        ["xpath=//p[2]/font/a", "xpath:position"],
+        ["xpath=//a[contains(.,'sign-in ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "026a9117-198b-4b50-ab1b-9e144bff73b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=form tr:nth-child(1) > td:nth-child(2)",
+      "targets": [
+        ["css=form tr:nth-child(1) > td:nth-child(2)", "css:finder"],
+        ["xpath=//form/table/tbody/tr/td[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c780f4ee-17c7-43b3-87d2-26837f6b11c5",
+      "comment": "clicking username text box",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(1) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3abd7039-cce5-457e-99e9-a052a7f9ffac",
+      "comment": "Leaving user name field as null",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(1) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01d66d0c-a0af-48b5-85d2-958b1fa228ce",
+      "comment": "selecting password text box",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84ddc74b-69e5-4bee-8518-f223c8aedc2b",
+      "comment": "Leaving password field as null",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44fe1cd8-a4d9-4d98-a397-6b8ea569809a",
+      "comment": "clicking submit ",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//tr[4]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2637d637-c6de-4d03-a273-61829e4b6b5a",
+      "comment": "seeing if log in is successful ",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Login Successfully')]", "xpath:innerText"]
+      ],
+      "value": "Login Successfully"
+    }]
+  }],
+  "suites": [{
+    "id": "67080934-08c7-4bfc-a218-4d9b1a3f9257",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["61c8899d-1100-4c87-9fe0-f975eee2c7c7", "2e48e736-4d04-476d-9689-f119b1b11787", "b9d72be1-4095-4903-a41b-9bdab6f5af37", "ab0d7e3f-3898-4d2c-8eeb-f09c21ae9f5a", "aed75e38-1054-4340-b8eb-d4a7a72cf015"]
+  }],
+  "urls": ["https://demo.guru99.com/", "https://demo.guru99.com/test/newtours/"],
+  "plugins": []
+}
